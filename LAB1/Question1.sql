@@ -3,7 +3,7 @@ Query OK, 1 row affected (0.01 sec)
 
 mysql> use Mydbms;
 Database changed
-mysql> create table countries (country_id varchar(2),country_name varchar(100),region_id Decimal(10,0),primary key(country_id));
+mysql> create table countries (country_id varchar(2),country_name varchar(40),region_id Decimal(10,0),primary key(country_id));
 Query OK, 0 rows affected (0.19 sec)
 
 mysql> show tables;
@@ -19,7 +19,7 @@ mysql> desc countries;
 | Field        | Type          | Null | Key | Default | Extra |
 +--------------+---------------+------+-----+---------+-------+
 | country_id   | varchar(2)    | NO   | PRI | NULL    |       |
-| country_name | varchar(100)   | YES  |     | NULL    |       |
+| country_name | varchar(40)   | YES  |     | NULL    |       |
 | region_id    | decimal(10,0) | YES  |     | NULL    |       |
 +--------------+---------------+------+-----+---------+-------+
 3 rows in set (0.02 sec)
